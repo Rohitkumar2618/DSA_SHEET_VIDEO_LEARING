@@ -33,6 +33,30 @@ int maxProfit(vector<int> &arr) {
 
 }
 
+// Optimal approach
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+    int n = prices.size();
+        int minPrice= INT_MAX;
+        int maxProfit = 0;
+   
+    for(int i=0; i<n; i++){
+       
+    //    Sabse chota kon hai  min Price ki current element jo hai usee minprice me add kro 
+       minPrice = min(minPrice, prices[i]);
+
+    //    max profit
+    // jo element maxProfit mai already hai vo ya [current element - minprice] --- Max profit ka nikalne ka way
+    maxProfit = max(maxProfit,   prices[i]-minPrice);
+
+    }
+
+return maxProfit;
+    }
+};
+
 
 
 
