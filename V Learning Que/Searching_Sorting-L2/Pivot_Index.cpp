@@ -39,13 +39,13 @@ else{
  mid = s+(e-s)/2;
 
 }
-return mid;
+return -1;
 }
 
 
 int main(){
 
-    // vector<int> arr = {12, 14, 16,18, 2, 4, 6, 8}; // Corrected the vector initialization
+    // vector<int> arr = {12, 14, 16, 2, 4, 6, 8}; // Corrected the vector initialization
     vector<int> arr = {6, 1, 2, 3, 4, 5}; // Pivot index should be 2 (element 16)
     
 
